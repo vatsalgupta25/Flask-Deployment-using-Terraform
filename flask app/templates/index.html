@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="title">
+        <h1> Portfolio Optimazation Website</h1>
+    </div>
+    <div class="Input">
+        <form method="POST" action="/process_input">
+            <label for="user_input">Enter a valid email :</label>
+            <input type="text" id="user_input" name="user_input">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

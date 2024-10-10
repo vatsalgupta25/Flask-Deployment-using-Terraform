@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Details.css') }}">
+</head>
+<body>
+    <h1>
+        Kindly Enter the following details
+    </h1>
+    <div class = "Parameters">
+    <form method="POST" action="/logic">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="age" id="age" name="age" required>
+
+        <label for="income">Income:</label>
+        <input type="income" id="income" name="income" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
