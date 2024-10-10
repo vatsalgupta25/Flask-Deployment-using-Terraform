@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='logic.css') }}">
+</head>
+<body>
+    <div class="title">
+        <h1>Optimized portfolio</h1>
+    </div>
+    <div class="content">
+        <p> Advice for: {{ b }}</p>
+        <p> Age declared: {{ d }}</p>
+        <p> Suggested Amount for Investment: {{ c }}</p>
+        <p>{{ a|safe }}</p>
+    </div>
+</body>
+</html>
